@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-cn" class="h-100">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>预约</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <!-- Favicons -->
+    <link rel="icon" href="images/icon.ico" sizes="32x32">
+
+    <!-- 自定义外部标签 -->
+    <link href="css/allpages.css" type="text/css" rel="stylesheet"/>
+</head>
+<body class="d-flex flex-column h-100 bg-image">
+<header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="index.html">会议室预约系统</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+
+                <li class="nav-item active">
+                    <label class="nav-link" href="">预约</label>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">关于</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">User Name</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown01">
+                        <a class="dropdown-item" href="myInfo.html">个人信息</a>
+                        <a class="dropdown-item" href="myHistory.html">预约记录</a>
+                        <a class="dropdown-item" href="#">退出</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="card">
+                <div class="card-header text-white card-color">
+                    <label class="card-title">填写预约信息</label>
+                </div>
+                <div class="card-body">
+                    <form method="post" action="#">
+                        <div class="form-group">
+                            <label for="name">联系人姓名:</label>
+                            <input type="text" class="form-control" id="name" name="name" placeholder="输入联系人姓名">
+                        </div>
+                        <div class="form-group">
+                            <label for="phoneNum">联系电话:</label>
+                            <input type="number" class="form-control" id="phoneNum" name="phoneNum" placeholder="输入联系人电话">
+                        </div>
+                        <div class="form-group">
+                            <label for="state">使用说明:</label>
+                            <textarea class="form-control" id="state" name="state" placeholder="输入使用说明（请务必留下联系人手机号以及用途。会议结束后请尽快将会议室钥匙归还原处。不符合规定的预订将予以取消！）"></textarea>
+                        </div>
+                        <div class="form-group w-50">
+                            <label for="selectRoom">会议室:</label>
+                            <select class="form-control" id="selectRoom" name="selectRoom">
+                                <option>行政辅楼1楼会议室</option>
+                                <option>行政辅楼222会议室</option>
+                                <option>行政辅楼215会议室</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>选择日期：</label>
+                            <!--可以通过min和max属性限制选择的日期-->
+                            <input class="form-check" type="date" id="selectDate" name="selectDate" min="" max="">
+                        </div>
+                        <div class="form-group w-50">
+                            <label for="selectTime">选择时间段(按住 shift 键，可以选取多个选项):</label>
+                            <select multiple class="form-control" id="selectTime" name="selectTime">
+                                <option>8:00</option>
+                                <option>9:00</option>
+                                <option>10:00</option>
+                                <option>11:00</option>
+                                <option>12:00</option>
+                                <option>13:00</option>
+                                <option>14:00</option>
+                                <option>15:00</option>
+                                <option>16:00</option>
+                                <option>17:00</option>
+                                <option>18:00</option>
+                                <option>19:00</option>
+                                <option>20:00</option>
+                            </select>
+                        </div>
+
+                        <!--        <div class="form-check">-->
+                        <!--            <label class="form-check-label">-->
+                        <!--                <input class="form-check-input" type="checkbox"> Remember me-->
+                        <!--            </label>-->
+                        <!--        </div>-->
+                        <button type="submit" class="btn btn-primary">提交</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<footer class="my-footer mt-auto py-3">
+    <div class="container text-center">
+        <span class="text-muted">&copy;2020 网络与信息安全学院. All rights reserved.</span>
+    </div>
+</footer>
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<!--<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>-->
+<!--<script>window.jQuery || document.write('<script src="js/vendor/jquery.slim.min.js"><\/script>')</script>-->
+<script src="js/jquery-3.4.1.js"></script>
+<script src="js/jquery.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
